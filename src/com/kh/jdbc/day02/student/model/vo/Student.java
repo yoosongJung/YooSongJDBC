@@ -1,4 +1,4 @@
-package com.kh.jdbc.day01.student.model.vo;
+package com.kh.jdbc.day02.student.model.vo;
 
 import java.sql.Date;
 
@@ -13,6 +13,35 @@ public class Student {
 	private String address;
 	private String hobby;
 	private Date enrollDate;
+	
+	public Student() {
+		
+	}
+	
+	public Student(String studentId, String studentPwd, String email, String phone, String address, String hobby) {
+		super();
+		this.studentId = studentId;
+		this.studentPwd = studentPwd;
+		this.email = email;
+		this.phone = phone;
+		this.address = address;
+		this.hobby = hobby;
+	}
+
+	public Student(String studentId, String studentPwd, String studentName, char gender, int age, String email,
+			String phone, String address, String hobby) {
+		super();
+		this.studentId = studentId;
+		this.studentPwd = studentPwd;
+		this.studentName = studentName;
+		this.gender = gender;
+		this.age = age;
+		this.email = email;
+		this.phone = phone;
+		this.address = address;
+		this.hobby = hobby;
+	}
+	
 	public String getStudentId() {
 		return studentId;
 	}
@@ -73,6 +102,7 @@ public class Student {
 	public void setEnrollDate(Date enrollDate) {
 		this.enrollDate = enrollDate;
 	}
+	
 	@Override
 	public String toString() {
 		return "학생 [아이디=" + studentId + ", 비번=" + studentPwd + ", 이름=" + studentName
