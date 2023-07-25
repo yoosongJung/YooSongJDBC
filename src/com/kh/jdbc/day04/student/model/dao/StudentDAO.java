@@ -49,7 +49,6 @@ public class StudentDAO {
 			try {
 				rset.close();
 				stmt.close();
-				conn.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -78,7 +77,6 @@ public class StudentDAO {
 			try {
 				rset.close();
 				pstmt.close();
-				conn.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -108,7 +106,6 @@ public class StudentDAO {
 			try {
 				rset.close();
 				pstmt.close();
-				conn.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -140,7 +137,6 @@ public class StudentDAO {
 		} finally {
 			try {
 				pstmt.close();
-				conn.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -163,7 +159,6 @@ public class StudentDAO {
 		} finally {
 			try {
 				pstmt.close();
-				conn.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -190,7 +185,6 @@ public class StudentDAO {
 		} finally {
 			try {
 				pstmt.close();
-				conn.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
